@@ -1,8 +1,8 @@
 
 .earth {
   position: relative;
-  width: 110px;
-  height: 110px;
+  width: 440px;
+  height: 440px;
   background: #001733;
   background-size: cover;
   border-radius: 50%;
@@ -47,7 +47,7 @@
     background-position: 0 0;
   }
   100% {
-    background-position: 198px 0;
+    background-position: 792px 0;
   }
 }
 @keyframes rotateEarth {
@@ -55,15 +55,15 @@
     background-position-x: 0px;
   }
   100% {
-    background-position-x: 198px;
+    background-position-x: 792px;
   }
 }
 
 .loader
 {
   position: relative;
-  width: 110px;
-  height: 120px;
+  width: 440px;
+  height: 480px;
   z-index: 3;
 }
 .loader span 
@@ -118,11 +118,11 @@
     content: '\f072';
     font-family: fontAwesome;
     position: absolute;
-    top: 100px;
-    left: 85px;
+    top: 420px;
+    left: 340px;
     color: #FFFF;
-    font-size: 30px;
-    transform: rotate(120deg);
+    font-size: 120px;
+    transform: rotate(135deg);
     z-index: 7;
 }
 @keyframes rotatePlane {

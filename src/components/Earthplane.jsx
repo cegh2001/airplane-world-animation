@@ -1,9 +1,8 @@
 import React from 'react'
-import './Loading.css'
+import './Earthplane.css'
 
-const Loading = () => {
+const Earthplane = () => {
   return (
-    <div className=''>
       <div className="grid place-content-center relative">
         <div className="z-0 translate-y-8 earth">
           <div className="z-10 loader">
@@ -31,8 +30,7 @@ const Loading = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 
-export default Loading
+export default Earthplane

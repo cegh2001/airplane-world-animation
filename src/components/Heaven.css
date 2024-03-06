@@ -1,0 +1,31 @@
+
+
+.clouds
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events:none;
+}
+.clouds img {
+    position: absolute;
+    max-width: 100%;
+    bottom: 0;
+    animation: animateCloud calc(3s * var(--i)) linear infinite
+}
+@keyframes animateCloud {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    25%,75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}

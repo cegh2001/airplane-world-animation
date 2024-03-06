@@ -9,5 +9,8 @@
   }
 }
 .input-text{
-    @apply font-poppins bg-transparent border border-t-0 border-l-0 border-r-0 focus:outline-none text-white tracking-wide;
+    @apply font-poppins border border-white bg-transparent border-opacity-50 rounded-full text-white tracking-wide;
+}
+.input-text::placeholder {
+  color: #FFFF; 
 }
