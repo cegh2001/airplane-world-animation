@@ -3,7 +3,7 @@ import './Loading.css'
 
 const Loading = () => {
   return (
-    <div className='h-screen bg-slate-500'>
+    <div className=''>
       <div className="grid place-content-center relative">
         <div className="z-0 translate-y-8 earth">
           <div className="z-10 loader">
