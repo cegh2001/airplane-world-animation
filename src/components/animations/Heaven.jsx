@@ -1,5 +1,5 @@
 import React from 'react'
-import './Heaven.css'
+import './styles/Heaven.css'
 
 const Heaven = () => {
   return (

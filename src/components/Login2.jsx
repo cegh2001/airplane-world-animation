@@ -3,7 +3,7 @@ import React from "react";
 import { CiUser } from "react-icons/ci";
 import { CiLock } from "react-icons/ci";
 import Tilt from "react-parallax-tilt";
-import Heaven from "./Heaven";
+import Heaven from "./animations/Heaven";
 
 const Login2 = () => {
   return (

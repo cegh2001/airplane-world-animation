@@ -1,0 +1,48 @@
+
+
+.loader2 
+{
+    position: absolute;
+    height: 10px;
+    text-align: center;
+}
+.loader2 span 
+{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 0px;
+    animation: animateLoader2 2s linear infinite;
+    list-style: none;
+    opacity: 0;
+    animation-delay:calc(0.08s * var(--i));
+}
+@keyframes animateLoader2
+{
+    0% 
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    25% 
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    50% 
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    75% 
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    100% 
+    {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}

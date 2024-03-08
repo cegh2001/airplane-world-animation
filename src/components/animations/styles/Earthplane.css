@@ -1,8 +1,8 @@
 
 .earth {
   position: relative;
-  width: 440px;
-  height: 440px;
+  width: 220px;
+  height: 220px;
   background: #001733;
   background-size: cover;
   border-radius: 50%;
@@ -14,9 +14,7 @@
   animation: rotateEarth 12s linear infinite;
   z-index: 0;
 }
-.earth:active {
-  transform: scale(5);
-}
+
 .earth:before {
   content: '';
   position: absolute;
@@ -24,7 +22,7 @@
   height: 100%;
   border-radius: 50%;
   overflow: hidden;
-  background: url('../assets/earth-red.png');
+  background: url('/earth-red.png');
   background-size: cover;
   animation: rotateEarth 9s linear infinite;
   z-index: 1;
@@ -36,7 +34,7 @@
   height: 100%;
   border-radius: 50%;
   overflow: hidden;
-  background: url('../assets/cloud.png');
+  background: url('/cloud.png');
   background-size: cover;
   animation: animateEarth 6s linear infinite;
   z-index: 2;
@@ -47,7 +45,7 @@
     background-position: 0 0;
   }
   100% {
-    background-position: 792px 0;
+    background-position: 396px 0;
   }
 }
 @keyframes rotateEarth {
@@ -55,15 +53,15 @@
     background-position-x: 0px;
   }
   100% {
-    background-position-x: 792px;
+    background-position-x: 396px;
   }
 }
 
 .loader
 {
   position: relative;
-  width: 440px;
-  height: 480px;
+  width: 220px;
+  height: 240px;
   z-index: 3;
 }
 .loader span 
@@ -118,11 +116,11 @@
     content: '\f072';
     font-family: fontAwesome;
     position: absolute;
-    top: 420px;
-    left: 340px;
+    top: 205px;
+    left: 170px;
     color: #FFFF;
-    font-size: 120px;
-    transform: rotate(135deg);
+    font-size: 60px;
+    transform: rotate(137deg);
     z-index: 7;
 }
 @keyframes rotatePlane {

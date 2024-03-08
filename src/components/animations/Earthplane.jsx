@@ -1,5 +1,5 @@
 import React from 'react'
-import './Earthplane.css'
+import './styles/Earthplane.css'
 
 const Earthplane = () => {
   return (
