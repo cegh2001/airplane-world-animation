@@ -1,9 +1,9 @@
-import Loadings from "@/src/components/Loadings";
+import Login4 from "@/src/components/Login4";
 
 export default function Page() {
     return (
       <div>
-        <Loadings />
+        <Login4 />
       </div>
     );
     }

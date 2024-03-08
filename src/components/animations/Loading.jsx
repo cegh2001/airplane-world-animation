@@ -3,7 +3,7 @@ import "./styles/Loading.css";
 
 const Loading = () => {
   return (
-        <div className="loader space-x-2 w-[400px]">
+        <div className="loader space-x-2">
           <span></span>
           <span></span>
           <span></span>

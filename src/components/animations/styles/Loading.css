@@ -10,7 +10,7 @@
     height: 10px;
     display: inline-block;
     border-radius: 50%;
-    
+    margin: 0 0px;
     animation: animateLoader 2s linear infinite;
     list-style: none;
     opacity: 0;
