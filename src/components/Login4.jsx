@@ -6,6 +6,7 @@ import Loading4 from './animations/Loading4';
 import {Sidebar} from './Sidebar';
 import Sidebar2 from './Sidebar2';
 import Sidebar3 from './Sidebar3';
+import LoginAuth from './LoginAuth';
 
 const Login4 = () => {
   return (
@@ -24,7 +25,10 @@ const Login4 = () => {
         <Loading2 />
         <Loading3 />
         <Loading4 />
-        </div>
+      </div>
+      <div>
+        <LoginAuth />
+      </div>
     </div>
   );
 }

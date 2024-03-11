@@ -14,11 +14,13 @@
     "@material-tailwind/react": "^2.1.9",
     "headlessui": "^0.0.0",
     "heroicons": "^2.1.1",
+    "js-cookie": "^3.0.5",
     "next": "14.1.1",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
-    "react-parallax-tilt": "^1.7.212"
+    "react-parallax-tilt": "^1.7.212",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
