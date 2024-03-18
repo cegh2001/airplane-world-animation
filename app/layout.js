@@ -17,7 +17,9 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         ></script>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+          <main className="text-foreground bg-background">{children}</main>
+      </body>
     </html>
   );
 }

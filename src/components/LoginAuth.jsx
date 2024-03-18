@@ -14,13 +14,10 @@ export default function LoginAuth() {
     login(username, password);
   };
 
-  const isAuthenticated = useStore((state) => state.isAuthenticated);
-
-
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label>
+        <label className="">
           Usuario:
           <input type="text" name="username" required />
         </label>
@@ -30,13 +27,6 @@ export default function LoginAuth() {
         </label>
         <button type="submit">Iniciar sesión</button>
       </form>
-      <div>
-        {isAuthenticated ? (
-          <div>Contenido protegido</div>
-        ) : (
-          <div>autentiquese</div>
-        )}
-      </div>
       <div>
         <button onClick={logout}>Cerrar sesión</button>{" "}
       </div>

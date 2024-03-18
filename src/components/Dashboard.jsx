@@ -1,17 +1,22 @@
 "use client";
-import { useRouter } from "next/navigation";
 import useStore from "../state/Store";
 import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Dashboard() {
-  const router = useRouter();
+  const logout = useStore((state) => state.logout);
   const isAuthenticated = useStore((state) => state.isAuthenticated);
+  const router = useRouter();
 
   useEffect(() => {
     if (!isAuthenticated) {
-      router.push("/");
+      router.push("/login2");
     }
   }, [isAuthenticated, router]);
 
-  return isAuthenticated ? <div>Contenido protegido</div> : <div>autentiquese</div>;
+  return (
+    <div>
+      <button onClick={logout}>Cerrar sesión</button>
+    </div>
+  );
 }

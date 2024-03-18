@@ -11,7 +11,7 @@ const useStore = create(persist((set) => ({
     const testPassword = "contraseña";
 
     if (username === testUser && password === testPassword) {
-      alert("te logueaste");
+      alert("Inicio de sesión exitoso");
       set({ isAuthenticated: true, user: username });
     } else {
       alert("Usuario o contraseña incorrectos");
