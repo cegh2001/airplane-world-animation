@@ -1,11 +1,14 @@
 "use client";
-import Dashboard from "@/src/components/Dashboard";
-import useStore from "@/src/state/Store";
-import { useRouter } from "next/navigation";
+import Dashboard from "@/src/components/Dashboard"
+import Table from "@/src/components/Table"
 
 export default function DashboardPage() {
-  const router = useRouter();
-  const isAuthenticated = useStore((state) => state.isAuthenticated);
-
-  return(isAuthenticated ? <Dashboard /> : router.push("/login2"));
+  return (
+    <div className='overflow-hidden -translate-y-64'>
+      <Dashboard />
+      <div className="relative bottom-64 left-80 z-10 ">
+        <Table />
+      </div>
+    </div>
+  );
 }
